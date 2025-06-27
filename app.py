@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 from parse_grades import parse_grades_from_string
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="GEMA Note calculator", page_icon="🧮", layout="wide")
 st.title("Analyse des Notes")
 
 # Option to paste grades
