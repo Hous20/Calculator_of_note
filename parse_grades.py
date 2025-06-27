@@ -40,7 +40,7 @@ def parse_grades_from_string(content_string):
                 i = j # Move past the lines we just tried to process
                 continue
 
-            match = re.match(r'([A-E]) \((\d\.?\d*)\)', grade_info)
+            match = re.match(r'([A-E]|F|Fx) \((\d\.?\d*)\)', grade_info)
             if match:
                 letter_grade = match.group(1)
                 numerical_grade = float(match.group(2))
